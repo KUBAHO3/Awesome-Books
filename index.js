@@ -1,4 +1,4 @@
-var listBooks = [
+let listBooks = [
   {
     title: 'Lorem Ipsum',
     author: 'Testero Testyy',
@@ -35,7 +35,6 @@ function removeBooks(index) {
 
   displayBooks(listBooks);
   localStorage.setItem('listBooks', JSON.stringify(listBooks));
-
 }
 
 function logSubmit(event) {
@@ -49,11 +48,13 @@ function logSubmit(event) {
 }
 document.querySelector('#submit-button').addEventListener('submit', (e) => logSubmit(e));
 
-
-if (localStorage.getItem('listBooks').length > 0) {
-    listBooks = JSON.parse(localStorage.getItem('listBooks'))
-    displayBooks(listBooks);
+if (localStorage.getItem('listBooks') !== null) {
+  listBooks = JSON.parse(localStorage.getItem('listBooks'));
+  displayBooks(listBooks);
 } else {
-    displayBooks(listBooks);
-
+  displayBooks(listBooks);
 }
+
+const indexi = 100;
+const remove = removeBooks(indexi);
+document.querySelector('.out').innerHTML = remove;
