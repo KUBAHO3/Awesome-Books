@@ -109,7 +109,7 @@ In this project I have created a book selector where user can add or remove a fa
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]( )
+- Comming Soon...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,7 +117,7 @@ In this project I have created a book selector where user can add or remove a fa
 
 ## 🦻 WalkThrough Video <a name="#walkthrough-demo"></a>
 
-- [WalkThrough Video Link]( )
+-  Comming Soon...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,13 +225,13 @@ If you like this project please follow me on github & twitter and also connect o
 
 - **Where to find figma for that project!**
 
-  - Figma can be found [here]()
+  - Figma is not available for now!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/KUBAHO3/My-Portfolio/blob/add-license-1/licence) licensed.
+This project is [MIT](https://github.com/KUBAHO3/Awesome-Books/blob/master/MIT.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

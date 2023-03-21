@@ -28,8 +28,6 @@ function displayBooks(listBooks) {
 `).join('');
 }
 
-// document.getElementById("formID").addEventListener("submit", logSubmit());
-
 function removeBooks(index) {
   listBooks.splice(index, 1);
 
