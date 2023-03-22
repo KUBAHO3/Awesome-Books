@@ -17,7 +17,7 @@ function addBooks(title, author) {
 }
 
 function displayBooks(listBooks) {
-  const bookSection = document.querySelector('.fav-books');
+  const bookSection = document.querySelector('#book-list');
   bookSection.innerHTML = listBooks.map((book, index) => `
 <div>
     <p>${book.title}</p>
