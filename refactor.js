@@ -27,7 +27,7 @@ class BookList {
   book(title, author) {
     this.newListBook.title = title;
     this.newListBook.author = author;
-    return this.newListBook;
+    return { title, author };
   }
 
   displayBooks() {
