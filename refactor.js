@@ -42,6 +42,14 @@ addBook(event) {
     this.displayBooks();
   }
 
+  
+
+removeBook(index) {
+    this.books.splice(index, 1);
+    localStorage.setItem('books', JSON.stringify(this.books));
+    this.displayBooks();
+  }
+
   setupEventListeners() {
     this.form.addEventListener('submit', this.addBook.bind(this));
     this.bookListContainer.addEventListener('click', (e) => {
