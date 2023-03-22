@@ -8,6 +8,13 @@ class BookList {
     this.displayBooks();
   }
 
+  
+book(title, author) {
+    this.newListBook.title = title;
+    this.newListBook.author = author;
+    return this.newListBook;
+  }
+
 
   setupEventListeners() {
     this.form.addEventListener('submit', this.addBook.bind(this));
