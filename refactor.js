@@ -17,7 +17,6 @@ class BookList {
     }
   }
 
-  
   book(title, author) {
     this.newListBook.title = title;
     this.newListBook.author = author;
@@ -40,8 +39,7 @@ class BookList {
     this.form.reset();
   }
 
-  
-addBook(event) {
+  addBook(event) {
     event.preventDefault();
     const title = event.target[0].value;
     const author = event.target[1].value;
@@ -51,9 +49,7 @@ addBook(event) {
     this.displayBooks();
   }
 
-  
-
-removeBook(index) {
+  removeBook(index) {
     this.books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(this.books));
     this.displayBooks();
