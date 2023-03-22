@@ -2,7 +2,14 @@ class BookList {
   constructor() {
     this.form = document.querySelector('#book-form');
     this.bookListContainer = document.querySelector('#book-list');
-    this.books = [];
+    this.books = [ {
+      title: 'Lorem Ipsum',
+      author: 'Testero Testyy',
+    },
+    {
+      title: 'Second Book',
+      author: 'Testero Testyy',
+    },];
     this.newListBook = {};
     this.loadBooksFromLocalStorage();
     this.displayBooks();
@@ -17,6 +24,7 @@ class BookList {
     }
   }
 
+  
   book(title, author) {
     this.newListBook.title = title;
     this.newListBook.author = author;
@@ -39,7 +47,8 @@ class BookList {
     this.form.reset();
   }
 
-  addBook(event) {
+  
+addBook(event) {
     event.preventDefault();
     const title = event.target[0].value;
     const author = event.target[1].value;
@@ -49,7 +58,9 @@ class BookList {
     this.displayBooks();
   }
 
-  removeBook(index) {
+  
+
+removeBook(index) {
     this.books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(this.books));
     this.displayBooks();
