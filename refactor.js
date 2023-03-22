@@ -8,8 +8,17 @@ class BookList {
     this.displayBooks();
   }
 
+  loadBooksFromLocalStorage() {
+    const storedBooks = localStorage.getItem('books');
+    if (storedBooks) {
+      this.books = JSON.parse(storedBooks);
+    } else {
+      localStorage.setItem('books', JSON.stringify(this.books));
+    }
+  }
+
   
-book(title, author) {
+  book(title, author) {
     this.newListBook.title = title;
     this.newListBook.author = author;
     return this.newListBook;
