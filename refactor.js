@@ -29,7 +29,7 @@ class BookList {
     this.books.forEach((book, index) => {
       const li = document.createElement('div');
       li.className = 'book';
-      li.innerHTML = `<span class="name">"${book.title}"</span> by <span class="names">${book.author}</span> `;
+      li.innerHTML = `<span class="name">&nbsp;"${book.title}"&nbsp;</span> by <span class="names">&nbsp;"${book.author}"&nbsp;</span> `;
       const removeBtn = document.createElement('button');
       removeBtn.className = 'remove';
       removeBtn.textContent = 'Remove';
