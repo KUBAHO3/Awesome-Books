@@ -101,6 +101,7 @@ In this project I have created a book selector where user can add or remove a fa
 - **Follow HTML and CSS best practice**
 - **Display Text**
 - **form validation**
+- **JavaScript classes**
 - **store form data in local storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
