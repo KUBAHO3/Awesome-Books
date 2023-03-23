@@ -38,11 +38,10 @@ class BookList {
 
   viewIt(element, section) {
     return () => {
-      
       this.lists.classList.remove('active-menu');
       this.adds.classList.remove('active-menu');
       this.contacts.classList.remove('active-menu');
-      
+
       this.listsSec.classList.add('hide');
       this.addsSec.classList.add('hide');
       this.contactsSec.classList.add('hide');
@@ -83,7 +82,6 @@ class BookList {
     localStorage.setItem('books', JSON.stringify(this.books));
     this.displayBooks();
   }
- 
 
   setupEventListeners() {
     this.form.addEventListener('submit', this.addBook.bind(this));
@@ -99,3 +97,43 @@ class BookList {
 }
 const myBookList = new BookList();
 myBookList.setupEventListeners();
+
+const date = new Date();
+
+const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
+
+const monthIndex = date.getMonth();
+const monthName = monthNames[monthIndex];
+const day = date.getDate();
+const year = date.getFullYear();
+const hour = date.getHours();
+const minute = date.getMinutes();
+const second = date.getSeconds();
+
+const suffix = hour >= 12 ? 'pm' : 'am';
+const hour12 = hour % 12 || 12;
+
+function getDaySuffix(day) {
+  if (day >= 11 && day <= 13) {
+    return 'th';
+  }
+  switch (day % 10) {
+    case 1:
+      return 'st';
+    case 2:
+      return 'nd';
+    case 3:
+      return 'rd';
+    default:
+      return 'th';
+  }
+}
+
+function padZero(num) {
+  return num.toString().padStart(2, '0');
+}
+
+const formattedDate = `${monthName} ${day}${getDaySuffix(day)}, ${year}, ${hour12}:${padZero(minute)}:${padZero(second)} ${suffix}`;
+document.getElementById('time').innerHTML = formattedDate;

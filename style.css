@@ -103,15 +103,15 @@ button[type="submit"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .footer {
   border: 1px solid black;
-   bottom: 0;
-   margin-bottom: 5px;
-   position: fixed;
-   width: 98%;
+  bottom: 0;
+  margin-bottom: 5px;
+  position: fixed;
+  width: 98%;
 }
 
 .hide {
@@ -120,4 +120,10 @@ button[type="submit"] {
 
 .contact-section {
   padding: 10% 0 0 0;
+}
+
+#time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
