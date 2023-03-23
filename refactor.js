@@ -2,6 +2,12 @@ class BookList {
   constructor() {
     this.form = document.querySelector('#book-form');
     this.bookListContainer = document.querySelector('#book-list');
+    this.lists = document.querySelector('#list');
+    this.adds = document.querySelector('#add-it');
+    this.contacts = document.querySelector('#contact-us');
+    this.listsSec = document.querySelector('.book-section');
+    this.addsSec = document.querySelector('.add-book-section');
+    this.contactsSec = document.querySelector('.contact-section');
     this.books = [{
       title: 'Lorem Ipsum',
       author: 'Testero Testyy',
@@ -61,9 +67,11 @@ class BookList {
     localStorage.setItem('books', JSON.stringify(this.books));
     this.displayBooks();
   }
+ 
 
   setupEventListeners() {
     this.form.addEventListener('submit', this.addBook.bind(this));
+   
     this.bookListContainer.addEventListener('click', (e) => {
       if (e.target.className === 'remove') {
         this.removeBook(e.target.dataset.index);
