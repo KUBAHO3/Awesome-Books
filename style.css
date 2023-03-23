@@ -3,7 +3,8 @@
 }
 
 .container {
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 #book-list {
@@ -64,4 +65,32 @@ hr {
 button[type="submit"] {
   align-self: flex-end;
   border: 2px solid black;
+}
+
+.navbar {
+  border: 1px solid black;
+}
+
+.nav-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-list-item {
+  list-style: none;
+  padding-left: 50px;
+  font-weight: 700;
+  cursor: pointer;
 }
