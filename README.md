@@ -103,6 +103,7 @@ In this project I have created a book selector where user can add or remove a fa
 - **form validation**
 - **JavaScript classes**
 - **store form data in local storage**
+- **Added the single Page behaviors**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,6 +193,10 @@ git@github.com:KUBAHO3/Sharing-World.git
 - GitHub: [@KUBAHO3](https://github.com/KUBAHO3)
 - Twitter: [@KubahoH](https://twitter.com/KubahoH)
 - LinkedIn: [Kubaho Linne Heaven](https://www.linkedin.com/in/kubaho-linne-heaven-78ab37208/)
+
+:bust_in_silhouette: **Yusuf Sholotan**
+- GitHub: [@yin-ka](https://github.com/yin-ka)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- FUTURE FEATURES -->
 

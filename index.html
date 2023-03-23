@@ -8,21 +8,56 @@
     <title>Awesome Books</title>
 </head>
 <body>
+    <header class="navbar">
+        <div class="container nav-holder">
+            <div class="navbar-brand">
+                <a class="navbar-brand" href="#">Awesome Books</a>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-item active-menu" id="list">List</li>
+                    <li class="menu-list-item" id="add-it">Add New</li>
+                    <li class="menu-list-item" id="contact-us">Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main class="main-section">
-        <div class="container">          
+        <p id="time"></p>
+        <div class="container book-section ">          
             <h1 id="list-title">Awesome Books</h1> 
             <div id="book-list">
             <!--Booklist added in javascript  -->
             </div>
-            <hr>
+        </div>
+        <div class="container add-book-section hide">          
+            <h1 id="list-title">Add a new Book</h1> 
+            
             <form id="book-form">
-                <h2 id="form-title">Add new book</h2>
-                <input type="text" id="title" placeholder="Title" required>
+                    <input type="text" id="title" placeholder="Title" required>
                 <input type="text" id="author" placeholder="Author" required>
                 <button type="submit">Add</button>
             </form>
         </div>
+        <div class="container contact-section hide">          
+            <h1 id="list-title">Contact Information</h1> 
+            <div class="contact-info ">
+                <p class="message">Do have any questions or you just want to say "Hello"? <br> You can reach out to us!</p>
+                <ul class="contact-lists">
+                    <li class="contact-lists-list">Our e-mail: mail@mail.com</li>
+                    <li class="contact-lists-list">Our phone number. 0043586534422</li>
+                    <li class="contact-lists-list">Our address: Streetname 22, 84503 City, Country</li>
+                </ul>
+            </div>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">
+                Copyright ...
+            </p>
+        </div>
+    </footer>
 
 <script src="refactor.js"></script>
 </body>
