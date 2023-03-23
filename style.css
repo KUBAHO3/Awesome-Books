@@ -98,3 +98,10 @@ button[type="submit"] {
 .active-menu {
   color: blue;
 }
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
