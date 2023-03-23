@@ -94,3 +94,7 @@ button[type="submit"] {
   font-weight: 700;
   cursor: pointer;
 }
+
+.active-menu {
+  color: blue;
+}
