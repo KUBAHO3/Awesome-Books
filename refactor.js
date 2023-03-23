@@ -36,6 +36,22 @@ class BookList {
     return { title, author };
   }
 
+  viewIt(element, section) {
+    return () => {
+      
+      this.lists.classList.remove('active-menu');
+      this.adds.classList.remove('active-menu');
+      this.contacts.classList.remove('active-menu');
+      
+      this.listsSec.classList.add('hide');
+      this.addsSec.classList.add('hide');
+      this.contactsSec.classList.add('hide');
+
+      element.classList.add('active-menu');
+      section.classList.remove('hide');
+    };
+  }
+
   displayBooks() {
     this.bookListContainer.innerHTML = '';
     this.books.forEach((book, index) => {
