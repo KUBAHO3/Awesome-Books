@@ -87,7 +87,9 @@ class BookList {
 
   setupEventListeners() {
     this.form.addEventListener('submit', this.addBook.bind(this));
-   
+    this.lists.addEventListener('click', this.viewIt(this.lists, this.listsSec));
+    this.adds.addEventListener('click', this.viewIt(this.adds, this.addsSec));
+    this.contacts.addEventListener('click', this.viewIt(this.contacts, this.contactsSec));
     this.bookListContainer.addEventListener('click', (e) => {
       if (e.target.className === 'remove') {
         this.removeBook(e.target.dataset.index);
