@@ -8,21 +8,26 @@
     <title>Awesome Books</title>
 </head>
 <body>
+
     <main class="main-section">
-        <div class="container">          
+        <div class="container book-section ">          
             <h1 id="list-title">Awesome Books</h1> 
             <div id="book-list">
             <!--Booklist added in javascript  -->
             </div>
-            <hr>
+        </div>
+        <div class="container add-book-section hide">          
+            <h1 id="list-title">Add a new Book</h1> 
+            
             <form id="book-form">
-                <h2 id="form-title">Add new book</h2>
-                <input type="text" id="title" placeholder="Title" required>
+                    <input type="text" id="title" placeholder="Title" required>
                 <input type="text" id="author" placeholder="Author" required>
                 <button type="submit">Add</button>
             </form>
         </div>
+       
     </main>
+    
 
 <script src="refactor.js"></script>
 </body>
